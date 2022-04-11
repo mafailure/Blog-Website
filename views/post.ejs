@@ -1,8 +1,14 @@
 <%-include('partials/header.ejs')-%>
+<div class="elem">
+
+<h1>Compose</h1>
 <form class="" action="/publish" method="post">
-
-
-<textarea name="name" rows="8" cols="80" placeholder="Enter the text ..." autofocus required></textarea><br>
-<button type="submit" name="button" class="button-25" >Submit</button>
+  <label for="title">Title</label><br>
+  <textarea name="title" rows="1" cols="80" required></textarea><br>
+  <label for="content">Content</label><br>
+<textarea name="content" rows="8" cols="80" placeholder="Enter the text ..." autofocus required></textarea><br>
+<button type="submit" name="button" class="button-25" >Publish</button>
 </form>
+
+</div>
 <%-include('partials/footer.ejs')-%>
